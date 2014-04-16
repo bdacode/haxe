@@ -17,6 +17,7 @@ env:
     - TARGET=java
     - TARGET=cs
     - TARGET=flash8
+    - TARGET=neko-sys
     - TARGET=polygonal-ds
     - TARGET=flambe
     - TARGET=hxtemplo
@@ -27,6 +28,7 @@ matrix:
   fast_finish: true
   allow_failures:
     - env: TARGET=flash8
+    - env: TARGET=neko-sys
 
 before_install:
   - travis_retry sudo apt-get update
